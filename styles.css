@@ -1,309 +1,335 @@
 /* Reset and Base Styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-    line-height: 1.6;
-    background-color: #f8f9fa;
-    color: #333;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  line-height: 1.6;
+  background-color: #f8f9fa;
+  color: #333;
 }
 
 a {
-    color: #960039; /* Default link color */
-    text-decoration: none;
+  color: #960039; /* Default link color */
+  text-decoration: none;
 }
 
 a:visited {
-    color: #960039; /* Same color as unvisited links */
+  color: #960039; /* Same color as unvisited links */
 }
 
 a:hover {
-    color: #70072F; /* Optional: A slightly darker shade for hover effect */
-    text-decoration: underline; /* Optional: Add underline when hovering */
+  color: #70072F; /* Optional: A slightly darker shade for hover effect */
+  text-decoration: underline; /* Optional: Add underline when hovering */
 }
 
 a:active {
-    color: #960039; /* Optional: Active link color */
+  color: #960039; /* Optional: Active link color */
+}
+
+.prof a{
+    color: #718096;
+}
+
+.Yi-Chung a{
+    color: #333;
+}
+
+.NMFImage {
+    max-height: 350px;
+    max-width: 100%;
+    object-fit: contain;
 }
 
 .container {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 40px;
-    background: #fff;
-    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
-    border-radius: 12px;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 40px;
+  background: #fff;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
 }
 
 /* Header Styles */
 header {
-    text-align: center;
-    margin-bottom: 40px;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 h1 {
-    font-size: 2.5rem;
-    color: #1a202c;
-    margin-bottom: 8px;
+  font-size: 2.5rem;
+  color: #1a202c;
+  margin-bottom: 8px;
 }
 
 .subtitle {
-    font-size: 1.5rem;
-    color: #4a5568;
+  font-size: 1.5rem;
+  color: #4a5568;
 }
 
 /* Profile Section */
 .profile {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-    margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 40px;
 }
 
 .profile-image {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    object-fit: cover;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    display: block;
-    margin: 10px auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: block;
+  margin: 10px auto;
 }
 
 .social-icons {
-    display: flex;
-    gap: 12px;
-    margin-bottom: 20px;
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
 }
 
 .social-icon {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    padding: 1px;
-    border-radius: 8px;
-    transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 1px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
 }
 
 .social-icon .icon {
-    width: 100%;
-    /* height: 20px; */
-    color: white;
-    border-radius: 8px;
+  width: 100%;
+  /* height: 20px; */
+  color: white;
+  border-radius: 8px;
 }
 
 .social-icons .gmail {
-    background-color: #F44336;
+  background-color: #F44336;
 }
 
 .social-icons .linkedin {
-    background-color: #0B63BD;
+  background-color: #0B63BD;
 }
 
 .social-icons .github {
-    background-color: #000000;
+  background-color: #000000;
 }
 
 .social-icons .chess {
-    background-color: #242321;
+  background-color: #242321;
 }
 
 .social-icon:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Section Styles */
 section {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 h2 {
-    font-size: 1.8rem;
-    color: #2d3748;
-    margin-bottom: 20px;
-    padding-bottom: 8px;
-    border-bottom: 2px solid #e2e8f0;
+  font-size: 1.8rem;
+  color: #2d3748;
+  margin-bottom: 20px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #e2e8f0;
 }
 
 h3 {
-    font-size: 1.4rem;
-    color: #2d3748;
-    margin-bottom: 12px;
+  font-size: 1.4rem;
+  color: #2d3748;
+  margin-bottom: 12px;
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* Project Styles */
 .project {
-    background: #f7fafc;
-    padding: 20px;
-    border-radius: 8px;
-    margin-bottom: 20px;
+  background: #f7fafc;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
 }
 
 .project-meta {
-    color: #718096;
-    font-style: italic;
-    margin-bottom: 12px;
+  color: #718096;
+  font-style: italic;
+  margin-bottom: 12px;
 }
 
 .inline-icon {
-    height: 1em;
-    vertical-align: middle;
+  height: 1em;
+  vertical-align: middle;
 }
 
 /* Role Styles */
 .role {
-    margin-bottom: 24px;
+  margin-bottom: 24px;
 }
 
 /* Skills Section */
 .skill-category {
-    margin-bottom: 24px;
+  margin-bottom: 24px;
 }
 
 .skill-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
 }
 
 .skill-tag {
-    background: #edf2f7;
-    color: #2d3748;
-    padding: 6px 16px;
-    border-radius: 999px;
-    font-size: 0.9rem;
-    font-weight: 500;
+  background: #edf2f7;
+  color: #2d3748;
+  padding: 6px 16px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 500;
 }
 
 /* List Styles */
 ul {
-    list-style-position: inside;
-    margin-left: 20px;
-    margin-bottom: 16px;
+  list-style-position: inside;
+  margin-left: 20px;
+  margin-bottom: 16px;
 }
 
 li {
-    /* margin-bottom: 8px; */
+  /* margin-bottom: 8px; */
 }
 
 /* Education Section */
 .education {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .education h2 {
-    font-size: 1.8rem;
-    color: #2d3748;
-    margin-bottom: 20px;
-    padding-bottom: 8px;
-    border-bottom: 2px solid #e2e8f0;
+  font-size: 1.8rem;
+  color: #2d3748;
+  margin-bottom: 20px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #e2e8f0;
 }
 
 .school {
-    background: #f7fafc;
-    padding: 20px;
-    border-radius: 8px;
-    margin-bottom: 20px;
+  background: #f7fafc;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
 }
 
 .school-header {
-    display: flex;
-    justify-content: space-between;  /* Pushes the logo to the right */
-    align-items: center;
+  display: flex;
+  justify-content: space-between;  /* Pushes the logo to the right */
+  align-items: center;
 }
 
 .school-info {
-    flex: 1;  /* Takes up remaining space */
+  flex: 1;  /* Takes up remaining space */
 }
 
 .school-logo {
-    max-height: 100px;
-    max-width: 100%;
-    object-fit: contain;
-    margin-left: 20px; /* Optional: Adds space between the info and logo */
+  max-height: 100px;
+  max-width: 100%;
+  object-fit: contain;
+  margin-left: 20px; /* Optional: Adds space between the info and logo */
 }
 
 .school h3 {
-    font-size: 1.4rem;
-    color: #2d3748;
-    margin-bottom: 8px;
+  font-size: 1.4rem;
+  color: #2d3748;
+  margin-bottom: 8px;
 }
 
 .school-info .location {
-    font-weight: 500;
-    color: #4a5568;
+  font-weight: 500;
+  color: #4a5568;
 }
 
 .school-info .major {
-    font-weight: 500;
-    color: #4a5568;
+  font-weight: 500;
+  color: #4a5568;
 }
 
 .school-info .dates {
-    color: #718096;
-    font-style: italic;
-    margin-bottom: 2px;
+  color: #718096;
+  font-style: italic;
+  margin-bottom: 2px;
+}
+
+.linebot-icon {
+  max-height: 150px;
+  max-width: 100%;
+  object-fit: contain;
 }
 
 /* Experience Section */
 
 .role .location {
-    font-weight: 500;
-    color: #4a5568;
+  font-weight: 500;
+  color: #4a5568;
 }
 
 .role .dates {
-    color: #718096;
-    font-style: italic;
-    margin-bottom: 8px;
+  color: #718096;
+  font-style: italic;
+  margin-bottom: 8px;
 }
 
 /* Awards and Honor Section */
 
 .award .dates {
-    color: #718096;
-    font-style: italic;
-    margin-bottom: 8px;
+  color: #718096;
+  font-style: italic;
+  margin-bottom: 8px;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .container {
-        padding: 20px;
-        margin: 20px;
-    }
+  .container {
+    padding: 20px;
+    margin: 20px;
+  }
 
-    .profile {
-        flex-direction: column;
-        text-align: center;
-    }
+  .profile {
+    flex-direction: column;
+    text-align: center;
+  }
 
-    .profile-image {
-        width: 240px;
-        height: 200px;
-    }
+  .profile-image {
+    width: 240px;
+    height: 200px;
+  }
 
-    .social-icons {
-        justify-content: center;
-    }
+  .social-icons {
+    justify-content: center;
+  }
 
-    .social-icon .icon {
-        width: 36px;
-        height: 36px;
-    }
+  .social-icon .icon {
+    width: 36px;
+    height: 36px;
+  }
 
-    h2, h3 {
-        text-align: center;
-    }
+  h2, h3 {
+    text-align: center;
+  }
 
-    .skill-tags {
-        justify-content: center;
-    }
+  .skill-tags {
+    justify-content: center;
+  }
 }

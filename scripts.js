@@ -1,4 +1,34 @@
-// This JavaScript file can be used for future interactivity
-document.addEventListener("DOMContentLoaded", () => {
-    console.log("Website loaded successfully!");
-});
+async function fetchLatestCommit() {
+    const repoOwner = "Richard080481"; // Replace with your GitHub username
+    const repoName = "Richard080481.github.io"; // Replace with your GitHub repo name
+    const apiUrl = `https://api.github.com/repos/${repoOwner}/${repoName}/commits`;
+
+    try {
+        const response = await fetch(apiUrl);
+        if (!response.ok) {
+            throw new Error("Failed to fetch commit data.");
+        }
+        const commits = await response.json();
+        const latestCommitDate = commits[0].commit.author.date;
+
+        // Format the date in Taiwan Time (UTC+8) without Chinese AM/PM
+        const date = new Date(latestCommitDate);
+        const formattedDate = date.toLocaleDateString("zh-TW", {
+            year: "numeric",
+            month: "2-digit",
+            day: "2-digit",
+            timeZone: "Asia/Taipei" // Set to Taiwan Time
+        }) + " " + date.toLocaleTimeString("zh-TW", {
+            hour12: false, // 24-hour format
+            timeZone: "Asia/Taipei" // Set to Taiwan Time
+        });
+
+        // Update the target paragraph
+        document.getElementById("last-updated").innerText = `Last updated on: ${formattedDate}`;
+    } catch (error) {
+        console.error("Error fetching commit data:", error);
+    }
+}
+
+// Fetch the latest commit when the page loads
+fetchLatestCommit();
