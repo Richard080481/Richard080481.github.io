@@ -13,14 +13,14 @@ async function fetchLatestCommit() {
 
         // Format the date in Taiwan Time (UTC+8) without Chinese AM/PM
         const date = new Date(latestCommitDate);
-        const formattedDate = date.toLocaleDateString("zh-TW", {
+        const formattedDate = date.toLocaleDateString("en-US", {
             year: "numeric",
             month: "2-digit",
             day: "2-digit",
-            timeZone: "Asia/Taipei" // Set to Taiwan Time
-        }) + " " + date.toLocaleTimeString("zh-TW", {
+            timeZone: "America/Los_Angeles"
+        }) + " " + date.toLocaleTimeString("en-US", {
             hour12: false, // 24-hour format
-            timeZone: "Asia/Taipei" // Set to Taiwan Time
+            timeZone: "America/Los_Angeles"
         });
 
         // Update the target paragraph
