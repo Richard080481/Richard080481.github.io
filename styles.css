@@ -30,7 +30,11 @@ a:active {
 }
 
 .prof a{
-    color: #718096;
+    color: #000;
+}
+
+.project-meta .date {
+  color: #718096;
 }
 
 .Yi-Chung a{
@@ -166,9 +170,9 @@ h3 {
 }
 
 .project-meta {
-  color: #718096;
-  font-style: italic;
-  margin-bottom: 12px;
+  /* color: #718096; */
+  /* font-style: italic; */
+  /* margin-bottom: 4px; */
 }
 
 .inline-icon {
