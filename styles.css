@@ -258,6 +258,7 @@ li {
   max-width: 100%;
   object-fit: contain;
   margin-left: 20px; /* Optional: Adds space between the info and logo */
+  border-radius: 8px;
 }
 
 .school h3 {
@@ -286,6 +287,14 @@ li {
   max-height: 150px;
   max-width: 100%;
   object-fit: contain;
+  border-radius: 8px;
+}
+
+.Calendar-YT {
+  display: block;
+  margin: 24px auto;
+  max-width: 100%;
+  border-radius: 8px;
 }
 
 /* Experience Section */
