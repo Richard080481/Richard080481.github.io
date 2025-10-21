@@ -319,9 +319,10 @@ li {
 }
 
 .spdkImage {
-  width: 200px;     /* or any desired width like %, rem, vw */
-  height: 300;    /* optional: you can set this to auto to preserve aspect ratio */
+  height: 300px;    /* optional: you can set this to auto to preserve aspect ratio */
+  width: auto;     /* or any desired width like %, rem, vw */
   object-fit: contain; /* Ensures the image scales properly */
+  border: 1px solid #3333332a;
 }
 /* Footer Styles */
 
