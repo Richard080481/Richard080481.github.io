@@ -41,6 +41,12 @@ a:active {
     color: #333;
 }
 
+.RandomBiomeGeneratorImage {
+    max-height: 300px;
+    max-width: 100%;
+    object-fit: contain;
+}
+
 .NMFImage {
     max-height: 350px;
     max-width: 100%;
