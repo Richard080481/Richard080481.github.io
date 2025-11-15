@@ -32,10 +32,6 @@ a:active {
 }
 
 .prof a {
-  color: #000;
-}
-
-.Yi-Chung a {
   color: #333;
 }
 
@@ -298,12 +294,6 @@ section {
   margin: 24px auto;
   max-width: 350px;
   border-radius: 8px;
-}
-
-.RandomBiomeGeneratorImage {
-  max-height: 300px;
-  max-width: 100%;
-  object-fit: contain;
 }
 
 .NMFImage {
