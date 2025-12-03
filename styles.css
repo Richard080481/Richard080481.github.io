@@ -271,8 +271,15 @@ section {
 
 /* Image Styles */
 .inline-icon {
-  height: 1em;
+  height: 1.2em;
   vertical-align: middle;
+  display: inline-block;
+  margin: 0 4px;
+  transition: transform 0.2s ease;
+}
+
+.inline-icon:hover {
+  transform: scale(1.1);
 }
 
 .wizzardchess-gif {
@@ -331,36 +338,61 @@ ul {
 }
 
 /* Responsive Design */
+@media (max-width: 420px) {
+  .container { padding:12px; margin:10px; }
+  h1 { font-size:1.35rem; }
+  .profile-image { width:140px; }
+  .skill-tag { padding:6px 10px; font-size:0.85rem; }
+  ul { margin-left:12px; }
+  .project { padding:12px; }
+
+  /* Make inline icons even bigger on very small phones */
+  .inline-icon {
+    height: 1.5em;
+    margin: 0 8px;
+  }
+
+  h3 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+  }
+}
+
 @media (max-width: 768px) {
-  .container {
-    padding: 20px;
-    margin: 20px;
+  .container { padding:18px; margin:14px; border-radius:10px; }
+  h1 { font-size:1.6rem; }
+  h2 { font-size:1.2rem; text-align:left; }
+  h3 { font-size:1.05rem; }
+
+  /* stack profile */
+  .profile { flex-direction:column; text-align:center; gap:12px; align-items:center; }
+  .profile-image { width:160px; }
+  .social-icons { justify-content:center; }
+
+  /* projects: description then image */
+  .project-header { flex-direction:column; align-items:stretch; text-align:left; gap:12px; }
+  .project-info { order:1; }
+  .project-header > a, .project-header img { order:2; max-width:100%; }
+
+  .project { padding:14px; }
+  .project-meta { font-size:0.95rem; }
+
+  /* Fix inline icons on mobile */
+  .inline-icon {
+    height: 1.4em;
+    margin: 0 6px;
   }
 
-  .profile {
-    flex-direction: column;
-    text-align: center;
+  h3 .inline-icon {
+    margin-left: 8px;
   }
 
-  .profile-image {
-    width: 240px;
-    height: 200px;
-  }
+  .skill-tags { justify-content:center; }
 
-  .social-icons {
-    justify-content: center;
-  }
+  /* easier touch targets */
+  .social-icon { width:48px; height:48px; border-radius:12px; }
 
-  .social-icon .icon {
-    width: 36px;
-    height: 36px;
-  }
-
-  h2, h3 {
-    text-align: center;
-  }
-
-  .skill-tags {
-    justify-content: center;
-  }
+  .spdkImage { max-height:220px; }
 }
