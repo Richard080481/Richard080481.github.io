@@ -330,6 +330,19 @@ section {
   border: 1px solid #3333332a;
 }
 
+.synthesis-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.synthesisImage {
+  height: 150px;
+  width: auto;
+  object-fit: contain;
+  border: 1px solid #3333332a;
+}
+
 .spdkImage {
   height: 300px;
   width: auto;
