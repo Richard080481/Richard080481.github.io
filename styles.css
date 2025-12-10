@@ -298,8 +298,8 @@ section {
 
 .WaveSimulator-gif {
   display: block;
-  margin: 24px auto;
-  max-width: 350px;
+  margin: 24px;
+  max-width: 300px;
   border-radius: 8px;
 }
 
@@ -321,6 +321,13 @@ section {
   margin: 24px auto;
   max-width: 100%;
   border-radius: 8px;
+}
+
+.waveImage {
+  height: 300px;
+  width: auto;
+  object-fit: contain;
+  border: 1px solid #3333332a;
 }
 
 .spdkImage {
@@ -395,4 +402,5 @@ ul {
   .social-icon { width:48px; height:48px; border-radius:12px; }
 
   .spdkImage { max-height:220px; }
+  .waveImage { max-height:220px; }
 }
