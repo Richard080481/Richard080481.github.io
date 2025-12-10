@@ -158,6 +158,11 @@ section {
   align-items: center;
 }
 
+.project-policy{
+  color: #718096;
+  font-size: smaller;
+}
+
 .project-info {
   margin-right: 1.5em;
 }
@@ -330,6 +335,19 @@ section {
   border: 1px solid #3333332a;
 }
 
+.raytracer-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 50%;
+    place-items: center;
+}
+
+.raytracerImage {
+  height: 150px;
+  width: 200px;
+  border: 1px solid #3333332a;
+}
+
 .synthesis-container {
     display: flex;
     flex-direction: column;
@@ -416,4 +434,6 @@ ul {
 
   .spdkImage { max-height:220px; }
   .waveImage { max-height:220px; }
+  .raytracerImage { max-height:220px; }
+  .synthesisImage { max-height:220px; }
 }
