@@ -290,14 +290,14 @@ section {
 .wizzardchess-gif {
   display: block;
   margin: 24px auto;
-  max-width: 400px;
+  max-width: 350px;
   border-radius: 8px;
 }
 
 .RandomBiomeGenerator-gif {
   display: block;
   margin: 24px auto;
-  max-width: 350px;
+  max-width: 300px;
   border-radius: 8px;
 }
 
