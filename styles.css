@@ -287,17 +287,10 @@ section {
   transform: scale(1.1);
 }
 
-.CudaParticleSimulation1-gif {
+.CudaParticleSimulation-gif {
   display: inline-block;
   margin: 4px;
-  max-width: 250px;
-  border-radius: 8px 8px 8px 8px;
-}
-
-.CudaParticleSimulation2-gif {
-  display: inline-block;
-  margin: 4px;
-  max-width: 250px;
+  max-width: 200px;
   border-radius: 8px 8px 8px 8px;
 }
 
