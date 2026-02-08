@@ -375,6 +375,26 @@ section {
   border: 1px solid #3333332a;
 }
 
+.unity-usc-image {
+  max-width: 200px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: block;
+  margin: 10px auto;
+}
+
+.unity-image{
+  max-width: 200px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: block;
+  margin: 10px auto;
+}
+
 /* List Styles */
 ul {
   list-style-position: inside;
