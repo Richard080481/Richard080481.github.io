@@ -144,6 +144,12 @@ section {
   margin-bottom: 40px;
 }
 
+.experience-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 /* Project Styles */
 .project {
   background: #f7fafc;
@@ -239,8 +245,14 @@ section {
   margin-bottom: 2px;
 }
 
+.nchu-library-logo {
+  max-height: 50px;
+  max-width: 100%;
+  border-radius: 8px;
+}
+
 .school-logo {
-  max-height: 100px;
+  max-height: 80px;
   max-width: 100%;
   object-fit: contain;
   margin-left: 20px;
