@@ -381,6 +381,15 @@ section {
   border: 1px solid #3333332a;
 }
 
+.GSReconstruction {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  max-height: 500px;    /* upper bound, not fixed height */
+  object-fit: contain;
+  border: 1px solid rgba(51, 51, 51, 0.16);
+}
+
 .waveImage,
 .spdkImage,
 .synthesisImage {
